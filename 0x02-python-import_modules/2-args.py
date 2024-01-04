@@ -1,8 +1,8 @@
-import sys
-
 if __name__ == "__main__":
-    args_list = sys.argv
-    args_len = len(args_list) - 1
+    import sys
+
+    args_list = sys.argv[1:]
+    args_len = len(args_list)
 
     if args_len == 0:
         print("{} arguments.".format(args_len))
