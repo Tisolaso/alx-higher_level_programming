@@ -1,7 +1,9 @@
-if __name__ == "__main__":
-    import sys
+#!/usr/bin/python3
+from sys import argv
 
-    args_list = sys.argv[1:]
+if __name__ == "__main__":
+
+    args_list = argv[1:]
     args_len = len(args_list)
 
     if args_len == 0:
