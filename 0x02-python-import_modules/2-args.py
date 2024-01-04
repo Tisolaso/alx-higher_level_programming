@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("{} arguments.".format(args_len))
 
     else:
-        print("{} arguments:".format(args_len))
+        print("{} argument{}".format(args_len, "s:" if args_len > 1 else ":"))
 
         for index, item in enumerate(args_list):
             print("{}: {}".format((index + 1), item))
