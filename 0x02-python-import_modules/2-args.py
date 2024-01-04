@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-from sys import argv
 
 if __name__ == "__main__":
-
+    from sys import argv
+    
     args_list = argv[1:]
     args_len = len(args_list)
 
-    if args_len == 0:
+    if args_len <= 0:
         print("{} arguments.".format(args_len))
 
     else:
