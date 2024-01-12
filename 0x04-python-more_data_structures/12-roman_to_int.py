@@ -18,3 +18,11 @@ def roman_to_int(roman_string):
                 sum += roman[char]
             index += 1
     return sum
+
+"""
+check if current charachter index is equal to lenght
+"I" can be subtracted from "V" and "X",
+"X" can be subtracted from "L" and "C",
+"C" can be subtracted from "D" and "M".
+However, "V", "L", and "D" cannot be used to represent subtraction.
+"""
