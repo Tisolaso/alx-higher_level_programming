@@ -3,7 +3,7 @@ const args = process.argv.slice(2);
 
 let sum = 1;
 
-function factorial(fact) {
+function factorial (fact) {
   for (let i = 2; i <= fact; i++) {
     sum = i * sum;
   }
@@ -11,4 +11,3 @@ function factorial(fact) {
 }
 
 factorial(parseInt(args[0]));
-

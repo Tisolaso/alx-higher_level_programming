@@ -8,4 +8,3 @@ if (!isNaN(args[0])) {
 } else {
   console.log('Missing number of occurrences');
 }
-

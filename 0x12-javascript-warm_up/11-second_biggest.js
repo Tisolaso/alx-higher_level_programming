@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const args = process.argv.slice(2);
-let sorted = args.slice(0);
+const sorted = args.slice(0);
 
 if (args.length > 2) {
   sorted.sort((a, b) => b - a);
@@ -8,4 +8,3 @@ if (args.length > 2) {
 } else {
   console.log(0);
 }
-

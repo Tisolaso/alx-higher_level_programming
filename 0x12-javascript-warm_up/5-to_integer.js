@@ -6,4 +6,3 @@ if (!isNaN(args[0])) {
 } else {
   console.log('Not a number');
 }
-

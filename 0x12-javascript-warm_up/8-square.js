@@ -8,11 +8,10 @@ if (!isNaN(args[0])) {
   for (let i = 1; i <= times; i++) {
     let line = '';
     for (let y = 1; y <= times; y++) {
-      line += 'X';
+      line += item;
     }
     console.log(line);
   }
 } else {
   console.log('Missing size');
 }
-
