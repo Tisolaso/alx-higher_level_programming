@@ -4,4 +4,3 @@ exports.esrever = function (list) {
   const reversedList = [...list].reverse();
   return reversedList;
 };
-

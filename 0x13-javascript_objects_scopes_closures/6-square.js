@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-Square = require('./5-square');
+const Square = require('./5-square');
 
 module.exports = class Square extends Square {
-  charPrint(c = 'X') {
+  charPrint (c = 'X') {
     let line = '';
 
     for (let i = 0; i < this.width; i++) {
@@ -15,4 +15,3 @@ module.exports = class Square extends Square {
     }
   }
 };
-

@@ -1,13 +1,13 @@
 #!/usr/bin/node
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
   }
 
-  print() {
+  print () {
     const item = 'X';
     let line = '';
 
@@ -20,16 +20,16 @@ class Rectangle {
     }
   }
 
-  rotate() {
+  rotate () {
     const num = this.width;
     this.width = this.height;
     this.height = num;
   }
-  double() {
+
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
 }
 
 module.exports = Rectangle;
-
