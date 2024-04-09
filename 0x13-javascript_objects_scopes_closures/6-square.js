@@ -14,5 +14,5 @@ class Square extends SquareParent {
       console.log(line);
     }
   }
-};
-module.exports = Square
+}
+module.exports = Square;
