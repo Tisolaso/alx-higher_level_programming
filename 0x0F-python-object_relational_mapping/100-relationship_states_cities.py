@@ -2,8 +2,8 @@
 """model state
 """
 from sqlalchemy import create_engine
-from model_state import Base, State
-from model_city import City
+from relationship_city import City
+from relationship_state import State, Base
 from sqlalchemy.orm import sessionmaker
 import sys
 
@@ -14,11 +14,12 @@ if __name__ == "__main__":
         ),
         pool_pre_ping=True,
     )
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    result = session.query(City, State).\
-        join(State, State.id == City.state_id).all()
-    if result:
-        for city, state in result:
-            print(f"{state.name}: ({city.id}) {city.name}")
+    newState = State(name='California')
+    newCity = City(name='San Francisco', state=newState)
+    # newState.cities.append(newCity)
+    session.add_all([newState, newCity])
+    session.commit()
     session.close()
