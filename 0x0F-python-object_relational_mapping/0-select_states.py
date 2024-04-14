@@ -23,3 +23,4 @@ if __name__ == "__main__":
     r = r.fetch_row(maxrows=0)
     for row in r:
         print(f"({row[0].decode()}, '{row[1].decode()}')")
+    db.close()
