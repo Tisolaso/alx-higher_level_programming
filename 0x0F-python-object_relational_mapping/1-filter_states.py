@@ -16,7 +16,8 @@ if __name__ == "__main__":
             'database': args[2],
             }
     db = _mysql.connect(**db_config)
-    db.query("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
+    db.query("SELECT * FROM states WHERE name \
+LIKE BINARY 'N%' ORDER BY id ASC")
 
     r = db.store_result()
 
