@@ -24,4 +24,4 @@ if __name__ == "__main__":
 
     for row in r:
         print(f"({row[0].decode()}, '{row[1].decode()}')")
-        db.close()
+    db.close()
